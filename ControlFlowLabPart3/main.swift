@@ -95,15 +95,27 @@ print("\n")
 
 print("***PROBLEM 3.0 : FITNESS APP")
 // You want your fitness tracking app to give as much encouragement as possible to your users. Create a variable steps equal to the number of steps you guess you've taken today (already done for you). Create a constant stepGoal equal to 10,000 (already done for you). Write an if-else statement that will print "You're almost halfway there!" if steps is less than half of stepGoal, and will print "You're over halfway there!" if steps is greater than half of stepGoal.
-var steps = 400
-let stepGoal = 10000
-
-
+var steps = 4999.0
+let stepGoal = 10000.0
+if (steps < stepGoal / 2) {
+    print("You're alomst halfway there!")
+}
+else {
+    print("You're over halfway there!")
+}
 print("\n")
 print("***PROBLEM 3.1 : FITNESS APP")
 // Now create a new, but similar, if-else-if statement that prints "Way to get a good start today!" if steps is less than a tenth of stepGoal, prints "You're almost halfway there!" if steps is less than half of stepGoal, and prints "You're over halfway there!" if steps is greater than half of stepGoal.
-
-
+if (steps < stepGoal * 0.10 ) {
+    print("Way to get a good start today!")
+}
+else if
+    (steps < stepGoal / 2 ) {
+    print("You're almost halfway there!")
+}
+else {
+    print("You're over halfway there!")
+}
 
 //Once you complete the coding, test "steps" with various numbers to see if all the coding works. Then continue.
 
@@ -119,17 +131,31 @@ print("***PROBLEM 3.2 : DINNER TIME")
  Another friend brings up a restaurant she thinks will fit both of your criteria. This restaurant's attributes are represented by a few constants below. Write an if-else statement that will print "Let's go!" if the restaurant's attributes match the group's dietary requirements, and otherwise will print "Sorry, we'll have to think of somewhere else."
  HINT: Create three boolean constants of hasFish, hasPizza, & hasVegan that are true. Then write your if-else statements.
  */
-
-
+let hasFish = false
+let hasPizza = false
+let hasVegan = true
+if (hasFish || hasPizza && hasVegan) {
+    print("Let's go!")
+}
+else {
+    print("Sorry, we'll have to think of somewhere else.")
+}
 
 print("\n")
 print("***PROBLEM 3.3 : COMBINING ALL LOGIC")
 // Imagine you're trying to decide whether or not to go on a walk. You decide that you'll go on a walk if it's not raining or if it's 82 degress or warmer and sunny out. Create a constant isNiceWeather that is equal to an expression that evaluates to a boolean indicating whether or not the weather is nice enough for you to go for a walk. Write an if statement that will print "I'm going for a walk!" if the weather is nice.
 //HINT: Declare two true Booleans - isRaining & isSunny. Then declare a variable - temp - that has the value of 90.Then declare the constant isNiceWeather which is given the value of the correct parameters of the previous three variables.
 //Double HINT: The conditional parens should begin with NOT isRaining.
-
-
-
+let isNiceWeather = false
+let isRaining = true
+let isSunny = true
+var temp = 90
+if (!isRaining && isSunny && temp >= 82 ){
+    print("I'm going for a walk!")
+}
+else {
+    print("I'm staying home and watching TV!")
+}
 //Once you complete the coding, test and run the code with various boolean conditions in the variables to see if all the coding works. Change true into false, use different degrees, etc. Then continue.
 
 print("\n")
